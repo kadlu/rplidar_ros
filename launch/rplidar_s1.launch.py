@@ -9,12 +9,12 @@ def generate_launch_description():
             package='rplidar_ros',
             executable='rplidar_composition',
             output='screen',
-            parameters=[{
-                'serial_port': 'rplidar',
-                'serial_baudrate': 256000,
-                'frame_id': 'laser',
-                'inverted': False,
-                'angle_compensate': True,
-            }],
+            parameters=[
+                {'serial_port': 'rplidar'},
+                {'serial_baudrate': 256000},
+                {'frame_id': 'laser'},
+                {'inverted': False},
+                {'angle_compensate': True}
+            ],
         ),
     ])
